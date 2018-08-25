@@ -1,0 +1,275 @@
+@font-face {
+    font-family: 'Overlock';
+    src: url("Ressources/fonts/Overlock-Regular.ttf");
+    font-weight: normal;
+    src: url("Ressources/font/Overlock-Light.ttf");
+    font-weight: light;
+    src: url("Ressources/fonts/Overlock-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'LoveYaLikeASister';
+    src: url("Ressources/fonts/LoveYaLikeASister.ttf");
+    font-weight: normal;
+}
+
+body {
+    max-width: 100%;
+    height: 5000px;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-family: 'Overlock';
+}
+
+nav ul li {
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+nav ul li:hover {
+    opacity: 0.8;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    line-height: 55px;
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transition: opacity 1s ease-out;
+    display: flex;
+    justify-content: center;
+}
+
+
+.inner-circle {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #ffffff
+    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-out;
+}
+
+.inner-circle:hover {
+    transform: scale(1.05);
+}
+
+.circle {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.post {
+    display: flex;
+    background: 50% 50% / cover no-repeat;
+    height: 100vh;
+    padding-top: 5%;
+}
+
+.Portrait {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("Ressources/SVG/home.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    flex-direction: column;
+}
+
+#foreword {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble {
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff4f4;
+    text-shadow: #292828 2px 2px 5px;
+    box-shadow: 11px 11px 11px 1px rgba(255, 255, 255, 0.258);
+    background-color: black;
+}
+
+.bubble>h2 {
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+
+#tree {
+    justify-content: flex-end;
+    background-image: url("Ressources/SVG/plante.svg");
+}
+
+#animal {
+    justify-content: flex-end;
+    background-image: url("Ressources/SVG/animal.svg");
+}
+
+#book {
+    background-image: url("Ressources/SVG/livre.svg");
+}
+
+#query {
+    justify-content: flex-end;
+    background-image: url("Ressources/SVG/requette.svg");
+}
+
+#object {
+    background-image: url("Ressources/SVG/object.svg");
+}
+
+#shape {
+    justify-content: flex-end;
+    background-image: url("Ressources/SVG/shape.svg")
+}
+
+#scarf {
+    background-image: url("Ressources/SVG/vetemetnai.svg");
+}
+
+#animal .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/cat.jpg");
+}
+
+#scarf .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/scarfu.jpg");
+}
+
+#tree .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/trees.jpg");
+}
+
+#query .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/teapot.jpg");
+}
+
+#object .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/notepad.jpg");
+}
+
+#book .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/book.jpg");
+}
+
+#shape .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/shape.jpg");
+}
+
+#foreword .bubble {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("Ressources/Images/foreword.jpg");
+}
+
+
+@media (max-width: 840px) {
+    nav ul {
+        max-width: 420px;
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h1,
+h2 {
+    font-family: 'LoveYaLikeASister', cursive;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+}
+
+.why {
+    background-image: url("Ressources/SVG/why.svg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
